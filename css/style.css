@@ -149,7 +149,7 @@ img {
 }
 
 .username {
-  font-weight: bold;
+  font-weight: 900;
   color: rgba(255, 255, 255, 0.366);
 }
 
@@ -165,4 +165,33 @@ img {
 .users-text:hover {
   background-color: #373a43;
   color: white;
+}
+
+/* FOOTER */
+
+.foot-profile {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  min-height: 70px;
+  color: white;
+  font-size: 13px;
+}
+
+.foot-item {
+  flex: 1 1 0;
+}
+
+.bi-bell-fill,
+.bi-houses-fill {
+  font-size: 20px;
+}
+
+.foot-item:last-child .myphoto {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
 }
