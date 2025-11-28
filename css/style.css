@@ -15,7 +15,7 @@ img {
 
 .container {
   display: flex;
-  background-color: black;
+  background-color: #141318;
   overflow: hidden;
 }
 
@@ -26,11 +26,12 @@ img {
 }
 
 .menu-right {
-  background-color: orange;
+  background-color: #1c1d22;
   flex: 1 1 0;
   overflow: auto;
-  margin-top: 8px;
+  margin-top: 12px;
   height: calc(100vh - 78px);
+  border-top-left-radius: 20px;
 }
 
 .menu-foot {
@@ -41,10 +42,6 @@ img {
 .scroll {
   background-color: rosybrown;
   overflow-y: auto;
-}
-
-.menu-top {
-  min-height: 70px;
 }
 
 .test-img {
@@ -67,4 +64,53 @@ img {
   box-shadow: 1px 1px 1px 0.7px #ffff;
   transition: transform 0.3s linear, box-shadow 0.3s linear;
   border: 2px white solid;
+}
+
+.menu-top {
+  min-height: 70px;
+  padding: 13px 18px;
+}
+
+.menu-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.bi-search {
+  height: 20px;
+  border-radius: 50%;
+  background-color: #373a43;
+}
+
+.menu-title {
+  margin-bottom: 5px;
+}
+
+.search-icon {
+  display: inline-block;
+  margin-right: 15px;
+  color: white;
+  line-height: 20px;
+  line-height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: #373a43;
+  text-align: center;
+}
+
+.btn-add-friend {
+  width: 500px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px 0;
+  background-color: #373a43;
+  border-width: 0;
+  color: white;
+  font-size: 18px;
+}
+
+.search-icon:hover,
+.btn-add-friend:hover {
+  background-color: #a4a4a4;
 }
