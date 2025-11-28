@@ -36,11 +36,11 @@ img {
 
 .menu-foot {
   min-height: 70px;
-  background-color: yellow;
+  background-color: #2d2d35;
 }
 
 .scroll {
-  background-color: rosybrown;
+  background-color: #1c1d22;
   overflow-y: auto;
 }
 
@@ -100,7 +100,7 @@ img {
 }
 
 .btn-add-friend {
-  width: 500px;
+  width: 300px;
   text-align: center;
   border-radius: 20px;
   padding: 5px 0;
@@ -110,7 +110,59 @@ img {
   font-size: 18px;
 }
 
+.search-icon:hover > *,
 .search-icon:hover,
 .btn-add-friend:hover {
   background-color: #a4a4a4;
+}
+
+/* User messages */
+
+.users-text {
+  display: flex;
+  background-color: #1c1d22;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 15px;
+  border-radius: 12px;
+}
+
+.user {
+  padding: 5px 5px 5px 8px;
+  margin: 10px 0;
+}
+
+.user:nth-child(2) {
+  flex: 1 1 0;
+}
+
+.user:nth-child(3) {
+  align-self: flex-start;
+  padding-right: 12px;
+}
+
+.user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.username {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.366);
+}
+
+.messaggio,
+.user:nth-child(3) {
+  color: rgba(255, 255, 255, 0.366);
+  font-size: 13px;
+}
+
+.users-text:hover .user > span,
+.users-text:hover .messaggio,
+.users-text:hover .username,
+.users-text:hover {
+  background-color: #373a43;
+  color: white;
 }
