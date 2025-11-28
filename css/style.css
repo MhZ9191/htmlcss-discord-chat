@@ -3,3 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  display: flex;
+  background-color: black;
+}
+
+.menu-left {
+  height: calc(100vh - 70px);
+  background-color: red;
+  width: 70px;
+}
+
+.menu-right {
+  background-color: orange;
+  flex: 1 1 0;
+  overflow: auto;
+  margin-top: 8px;
+}
+
+.menu-foot {
+  min-height: 70px;
+  background-color: yellow;
+}
+
+.debug {
+  border: 5px white solid;
+}
