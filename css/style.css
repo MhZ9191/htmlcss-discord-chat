@@ -25,6 +25,7 @@ img {
   flex: 1 1 0;
   overflow: auto;
   margin-top: 8px;
+  height: calc(100vh - 78px);
 }
 
 .menu-foot {
@@ -33,5 +34,14 @@ img {
 }
 
 .debug {
-  border: 5px white solid;
+  border: 1px white solid;
+}
+
+.scroll {
+  background-color: rosybrown;
+  overflow-y: auto;
+}
+
+.menu-top {
+  min-height: 30px;
 }
