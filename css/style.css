@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style-type: none;
+}
+
 img {
   width: 100%;
   display: block;
@@ -12,11 +16,12 @@ img {
 .container {
   display: flex;
   background-color: black;
+  overflow: hidden;
 }
 
 .menu-left {
   height: calc(100vh - 70px);
-  background-color: red;
+  background-color: #141318;
   width: 70px;
 }
 
@@ -33,15 +38,33 @@ img {
   background-color: yellow;
 }
 
-.debug {
-  border: 1px white solid;
-}
-
 .scroll {
   background-color: rosybrown;
   overflow-y: auto;
 }
 
 .menu-top {
-  min-height: 30px;
+  min-height: 70px;
+}
+
+.test-img {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 10px auto 0 auto;
+  height: 50px;
+  width: 50px;
+  transform: translateY(0);
+}
+
+.list-item:first-child {
+  width: 50px;
+  height: 50px;
+  margin: 20px auto 10px auto;
+}
+
+.test-img:hover {
+  transform: translateY(-7px);
+  box-shadow: 1px 1px 1px 0.7px #ffff;
+  transition: transform 0.3s linear, box-shadow 0.3s linear;
+  border: 2px white solid;
 }
